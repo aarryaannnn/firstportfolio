@@ -5,9 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/skins/color-1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!--style switcher-->
+    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="css/style-switcher.css">
 </head>
 <body>
     <div class="main-container">
@@ -19,25 +26,25 @@
                 <span></span>
             </div>
             <ul class="nav">
-                <li><a href="#" class="active"><i class="fa fa-home">Home</i></a></li>
-                <li><a href="#"><i class="fa fa-user">About</i></a></li>
-                <li><a href="#"><i class="fa fa-list">Services</i></a></li>
-                <li><a href="#"><i class="fa fa-briefcase">Portfolio</i></a></li>
-                <li><a href="#"><i class="fa fa-comments">Contact</i></a></li>
+                <li><a href="#home" class="active"><i class="fa fa-home">Home</i></a></li>
+                <li><a href="#about"><i class="fa fa-user">About</i></a></li>
+                <li><a href="#service"><i class="fa fa-list">Services</i></a></li>
+                <li><a href="#portfolio"><i class="fa fa-briefcase">Portfolio</i></a></li>
+                <li><a href="#contact"><i class="fa fa-comments">Contact</i></a></li>
             </ul>
         </div>
         <div class="main-content">
 
 
 
-            <section class="home section"> <!--to make home hidden add 'hidden class'-->
+            <section class="home active section" id="home"> <!--to make home hidden add 'hidden class'-->
                 <div class="container">
                     <div class="row">
                         <div class="home-info padd-15">
-                            <h3 class="hello">Hello, my name is <span class="name">Aryan Gupta</span></h3>
-                            <h3 class="my-profession">I'm a <span class="typing">web designer</span></h3>
+                            <h3 class="hello">Hi! this is <span class="name">Aryan Gupta</span> here...</h3>
+                            <h3 class="my-profession">I'm <span class="typing"></span></h3>
                             <p>I'm good in designing web pages and having 1 month of experience in front-end web development. I'm also a very good competitive programmer in C++ and very much interested in video editing using Adobe After Effects. </p>
-                            <a href="#contact" class="btn">Hire Me</a>
+                            <a href="https://drive.google.com/file/d/1YR60ISbLtcS-aGGXk83_K2lYJZivI7lE/view?usp=sharing" target="_blank" class="btn">Download CV</a>
                         </div>
                         <div class="home-img padd-15">
                             <img src="images/profile picture.jpeg" alt="">
@@ -48,7 +55,7 @@
 
 
 
-            <section class="about section ">
+            <section class="about section " id="about">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -82,7 +89,7 @@
                                             <p>Degree : <span>CSE</span></p>
                                         </div>
                                         <div class="info-item padd-15">
-                                            <p>Phoen : <span>8837319980</span></p>
+                                            <p>Phone : <span>8837319980</span></p>
                                         </div>
                                         <div class="info-item padd-15"">
                                             <p>City : <span>Dimapur</span></p>
@@ -93,13 +100,20 @@
                                     </div>
                                     <div class="row">
                                         <div class="buttons padd-15">
-                                            <a href="#" class="btn">Download CV</a>
-                                            <a href="#contact" class="btn hire-me">Hire me</a>
+                                            <a href="https://drive.google.com/file/d/1YR60ISbLtcS-aGGXk83_K2lYJZivI7lE/view?usp=sharing" target="_blank" class="btn">Download CV</a>
+                                            <a href="#contact" data-section-index="1" class="btn hire-me">Hire me</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="skills padd-15">
                                     <div class="row">
+                                        <div class="skill-item padd-15">
+                                            <h5>HTML</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 96%;"></div>
+                                                <div class="skill-percentage">96%</div>
+                                            </div>
+                                        </div>
                                         <div class="skill-item padd-15">
                                             <h5>CSS</h5>
                                             <div class="progress">
@@ -108,7 +122,7 @@
                                             </div>
                                         </div>
                                         <div class="skill-item padd-15">
-                                            <h5>JS</h5>
+                                            <h5>Java Script</h5>
                                             <div class="progress">
                                                 <div class="progress-in" style="width: 86%;"></div>
                                                 <div class="skill-percentage">86%</div>
@@ -122,17 +136,24 @@
                                             </div>
                                         </div>
                                         <div class="skill-item padd-15">
-                                            <h5>HTML</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 96%;"></div>
-                                                <div class="skill-percentage">96%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
                                             <h5>Boostrap</h5>
                                             <div class="progress">
                                                 <div class="progress-in" style="width: 76%;"></div>
                                                 <div class="skill-percentage">76%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5>C++</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 98%;"></div>
+                                                <div class="skill-percentage">98%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5>Python</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 80%;"></div>
+                                                <div class="skill-percentage">80%</div>
                                             </div>
                                         </div>
                                     </div>
@@ -148,23 +169,24 @@
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2020 - 2022
+                                                        <i class="fa fa-calendar"></i> NA - 2017
                                                     </h3>
-                                                    <h4 class="timeline-title">B. Tech in Computer Science</h4>
-                                                    <p class="timeline-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt dolore suscipit maiores obcaecati ipsam nostrum ullam quae sed aut provident illum, perferendis voluptates? Necessitatibus, iure quam aut aliquid quibusdam quae.</p>                                             
+                                                    <h4 class="timeline-title">ST. MARY'S HIGHER SECONDARY SCHOOL</h4>
+                                                    <p class="timeline-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat inventore dignissimos debitis.
+                                                    </p>                                             
                                                 </div>
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2020 - 2022
+                                                        <i class="fa fa-calendar"></i> 2017 - 20219
                                                     </h3>
-                                                    <h4 class="timeline-title">B. Tech in Computer Science</h4>
-                                                    <p class="timeline-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt dolore suscipit maiores obcaecati ipsam nostrum ullam quae sed aut provident illum, perferendis voluptates? Necessitatibus, iure quam aut aliquid quibusdam quae.</p>                                             
+                                                    <h4 class="timeline-title">KENDRIYA VIDYALAYA RANGAPAHAR</h4>
+                                                    <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quibusdam explicabo facere.</p>                                             
                                                 </div>
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2020 - 2022
+                                                        <i class="fa fa-calendar"></i> 2019 - Present
                                                     </h3>
                                                     <h4 class="timeline-title">B. Tech in Computer Science</h4>
                                                     <p class="timeline-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt dolore suscipit maiores obcaecati ipsam nostrum ullam quae sed aut provident illum, perferendis voluptates? Necessitatibus, iure quam aut aliquid quibusdam quae.</p>                                             
@@ -216,7 +238,7 @@
 
             <!-- Service section start -->
 
-            <section class="service section">
+            <section class="service section" id="service">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -302,7 +324,7 @@
             
             <!-- portfolio section start -->
 
-            <section class="portfolio section">
+            <section class="portfolio section" id="portfolio">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -357,20 +379,20 @@
 
             <!--contact section start-->
 
-            <section class="contact section">
+            <section class="contact section" id="contact">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
                             <h2>Contact Me</h2>
                         </div>
                     </div>
-                    <h3 class="contact-title padd-15">Do You Have Any Question</h3>
-                    <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICE</h4>
+                    <h3 class="contact-title padd-15">Do You Have Any Doubt?</h3>
+                    <h4 class="contact-sub-title padd-15">FEEL FREE TO CONTACT ME</h4>
                     <div class="row">
                         <!-- contact info item start -->
                         <div class="contact-info-item padd-15">
                             <div class="icon"><i class="fa fa-phone"></i></div>
-                                <h4>Call Us On</h4>
+                                <h4>Call on</h4>
                                 <p>+91 8837319980</p>
                         </div>
                         <!-- contact info item end -->
@@ -378,7 +400,7 @@
                         <div class="contact-info-item padd-15">
                             <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
                                 <h4>Office</h4>
-                                <p>Dimapurs</p>
+                                <p>Nirjuli</p>
                         </div>
                         <!-- contact info item end -->
                         <!-- contact info item start -->
@@ -397,7 +419,7 @@
                         <!-- contact info item end -->
                     </div>
                     <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
-                    <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4>
+                    <h4 class="contact-sub-title padd-15">I'll be happy to response</h4>
                     <!-- contact form -->
                     <div class="row">
                         <div class="contact-form padd-15">
@@ -409,7 +431,7 @@
                                 </div>
                                 <div class="form-item col-6 padd-15">
                                     <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email">
+                                        <input type="email" class="form-control" placeholder="Your e-mail">
                                     </div>
                                 </div>
                             </div>
@@ -442,5 +464,28 @@
             <!--contact section end-->
         </div>
     </div>
+    <!-- style switcher start-->
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fa fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas "></i>
+        </div>
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+    </div>
+    <!-- style switcher end-->
+    <!--js files-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
+    <script src="js/style-switcher.js"></script>
+
 </body>
 </html>
