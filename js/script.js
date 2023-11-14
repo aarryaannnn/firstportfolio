@@ -69,20 +69,24 @@ function updateNav(element) {
   }
 }
 
-document.querySelector(".hire-me").addEventListener("click", function () {
-  const sectionIndex = this.getAttribute("data-section-index");
+// UN COMMENT THIS WHEN ACTIVATING HIRE - MRE
 
-  showSection(this);
-  updateNav(this);
-  removeBackSection();
-  addBackSection(sectionIndex);
-});
+// document.querySelector(".hire-me").addEventListener("click", function () {
+//   const sectionIndex = this.getAttribute("data-section-index");
 
-const navTogglerBtn = document.querySelector(".nav-toggler"),
-  aside = document.querySelector(".aside");
+//   showSection(this);
+//   updateNav(this);
+//   removeBackSection();
+//   addBackSection(sectionIndex);
+// });
+
+const navTogglerBtn = document.querySelector(".nav-toggler");
+const aside = document.querySelector(".aside");
 navTogglerBtn.addEventListener("click", () => {
   asideSectionTogglerBtn();
+  console.log("aside");
 });
+
 function asideSectionTogglerBtn() {
   aside.classList.toggle("open");
   navTogglerBtn.classList.toggle("open");
